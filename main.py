@@ -20,10 +20,10 @@ def run_example(session):
     load_raw_person('Raw_Data.csv', session)
     transform_data(session)
 
-    print("Persons with ethnicity as Asian:\n")
+    print("Persons with ethnicity as Asian:")
     print_persons(search_persons_by(session, CleanPerson.ethnicity=="Asian"))
 
-    print("Persons with education as High School:\n")
+    print("Persons with education as High School:")
     print_persons(search_persons_by(session, CleanPerson.education=="High School"))
 
 if __name__ == "__main__" :
